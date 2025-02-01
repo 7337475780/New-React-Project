@@ -2,5 +2,27 @@
 @import "tailwindcss";
 
 :root {
-  font-family: "Poppins",sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+@theme {
+  --animate-scroll: scroll 1s ease-in-out;
+  --animate-scroll-close: scroll-close 1s ease-in-out;
+
+  @keyframes scroll-close {
+    0% {
+      width: 100%;
+    }
+    100% {
+      width: 10%;
+    }
+  }
+  @keyframes scroll {
+    0% {
+      width: 10%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
 }
