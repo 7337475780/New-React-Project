@@ -1,5 +1,7 @@
-import tvs2 from "../productList2";
+import { useCartStore } from "../store/CartStore";
 const ProductsCard = () => {
+  const addToCart = useCartStore((state) => state.addToCart);
+  const cart = useCartStore((state) => state.cart);
   return (
     <div>
       <div className="flex w-[800px] h-[400px] items-center  justify-start gap-2">

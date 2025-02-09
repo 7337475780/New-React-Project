@@ -1,7 +1,5 @@
-import { useState } from "react";
 import { useCartStore } from "../store/CartStore";
-import Products from "./Products";
-import { BiMinus, BiPlus, BiX } from "react-icons/bi";
+import { BiMinus, BiPlus } from "react-icons/bi";
 const Cart = () => {
   const cart = useCartStore((state) => state.cart);
   const removeFromCart = useCartStore((state) => state.removeFromCart);
@@ -37,7 +35,7 @@ const Cart = () => {
                     {product.brand}
                   </h1>
                   <p className=" text-sm">
-                    {product.description.substring(0, 30) + "..."}
+                    {product.description.length < 20 ? product.description : product.description.substring(0, 30) + "..."}
                   </p>
                 </div>
                 <div className="mt-[4%] items-center justify-center">

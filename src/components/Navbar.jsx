@@ -98,12 +98,12 @@ const Navbar = () => {
           <div className="w-70 flex border-r z-0 bg-blue-400 h-full top-0 absolute left-0 ">
             <ul className="absolute w-full items-center text-lg font-semibold  top-[8.5%] ">
               {NavItems.map((items) => (
-                <li
+                <a href={items.ref}
                   className=" p-2 hover:bg-yellow-400 rounded-full hover:text-white cursor-pointer w-full justify-center flex "
                   key={items.id}
                 >
                   {items.label}
-                </li>
+                </a>
               ))}
             </ul>
           </div>

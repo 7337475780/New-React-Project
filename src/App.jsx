@@ -5,7 +5,9 @@ import Features from "./components/Features";
 import Testimonials from "./components/Testimonials";
 import Products from "./components/Products";
 
+
 const App = () => {
+  
   return (
     <div>
       <Navbar />
