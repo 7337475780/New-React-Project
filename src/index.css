@@ -3,13 +3,31 @@
 
 :root {
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to left, #ffe082, #ffd300, #ffb74d);
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
+
+@layer utilities {
+  .no-scroll::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 @theme {
   --animate-scroll: scroll 1s ease-in-out;
   --animate-scroll-close: scroll-close 1s ease-in-out;
-
-  @keyframes scroll-close {
+  --animate-rotate: rotate 3s linear infinite;
+  --breakpoint-tablet: 1450px;
+   @keyframes scroll-close {
     0% {
       width: 100%;
     }
@@ -25,4 +43,20 @@
       width: 100%;
     }
   }
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    25%{
+      transform: rotate(90deg)
+    }
+    50%{
+      transform: rotate(180deg)
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
 }
+
