@@ -26,13 +26,44 @@
   --animate-scroll: scroll 1s ease-in-out;
   --animate-scroll-close: scroll-close 1s ease-in-out;
   --animate-rotate: rotate 3s linear infinite;
+  --animate-grow: grow 3s linear infinite;
+  --animate-grow-small: grow-small 3s ease infinite;
+  --animate-shift: shift 3s linear infinite;
   --breakpoint-tablet: 1450px;
-   @keyframes scroll-close {
+  @keyframes scroll-close {
     0% {
       width: 100%;
     }
     100% {
       width: 10%;
+    }
+  }
+  @keyframes grow {
+    0% {
+      transform: scale(1) translate(0px);
+    }
+    50% {
+      transform: scale(0.6) translateY(200px);
+    }
+    80% {
+      transform: scale(0.8) translateX(0px);
+    }
+    100% {
+      transform: scale(1) translate(0px);
+    }
+  }
+  @keyframes grow-small {
+    0% {
+      transform: scale(1) translate(0px);
+    }
+    50% {
+      transform: scale(0.4) translate(200px);
+    }
+    80% {
+      transform: scale(0.6) translateX(100px);
+    }
+    100% {
+      transform: scale(0.8) translate(0px);
     }
   }
   @keyframes scroll {
@@ -47,18 +78,26 @@
     0% {
       transform: rotate(0deg);
     }
-    25%{
-      transform: rotate(90deg)
+    25% {
+      transform: rotate(90deg);
     }
-    50%{
-      transform: rotate(180deg)
+    50% {
+      transform: rotate(180deg);
     }
     100% {
       transform: rotate(360deg);
     }
   }
 
+  @keyframes shift {
+    0% {
+      transform: translate(120px);
+    }
+    50% {
+      transform: scale(1.2) translate(60px);
+    }
+    100% {
+      transform: translate(80px);
+    }
+  }
 }
-
-
-

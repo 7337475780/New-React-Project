@@ -7,7 +7,7 @@ const Cart = () => {
   const updateQuantity = useCartStore((state) => state.updateQuantity);
 
   return (
-    <div className="w-screen h-full overflow-scroll overflow-x-hidden z-50 absolute top-0  bg-white ">
+    <div  className="w-screen cart h-full overflow-scroll overflow-x-hidden z-50 absolute top-0  bg-white ">
       <div className=" flex flex-col items-center px-4 py-6 md:px-8 md:py-8 ">
         <h2 className="md:text-4xl text-3xl  font-semibold bg-gradient-to-br from-amber-200 via-yellow-400 to-orange-400 bg-clip-text text-transparent">
           Cart

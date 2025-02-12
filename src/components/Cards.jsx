@@ -9,10 +9,10 @@ const Card = ({ products }) => {
   
   const productsScroll = useRef(null);
   const scrollLeft = () => {
-    productsScroll.current.scrollLeft += 300;
+    productsScroll.current.scrollLeft += 600;
   };
   const scrollRight = () => {
-    productsScroll.current.scrollLeft -= 300;
+    productsScroll.current.scrollLeft -= 600;
   };
 
   useEffect(() => {
@@ -23,13 +23,13 @@ const Card = ({ products }) => {
   return (
     <div className="flex relative  items-center">
       <div
-        onClick={scrollLeft}
+        onClick={scrollRight}
         className="absolute z-10 text-4xl ml-1 prev  translate-y-[-50%]  bg-white rounded-full cursor-pointer hover:text-blue-400 drop-shadow-xl "
       >
         <BiChevronLeft />
       </div>
       <div
-        onClick={scrollRight}
+        onClick={scrollLeft}
         className="absolute z-10 text-4xl mr-1 next translate-y-[-50%]  bg-white rounded-full cursor-pointer hover:text-blue-400 drop-shadow-xl  right-0"
       >
         <BiChevronRight />
@@ -40,7 +40,7 @@ const Card = ({ products }) => {
             id={items.id}
             className="flex flex-col   items-center justify-center p-2 text-wrap rounded-md border "
           >
-            <div className=" w-[300px] h-[200px] ">
+            <div className=" w-[300px] -z-10 h-[200px] ">
               <img
                 src={items.image}
                 className="w-full h-full rounded-md  "

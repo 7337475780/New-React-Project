@@ -4,15 +4,18 @@ import { useCartStore } from "../store/CartStore";
 import { BiCart, BiMenu, BiSearch, BiX } from "react-icons/bi";
 
 const NavItems = [
-  { label: "Home", ref:"#home"  },
-  { label: "Products", ref:"#products" },
-  { label: "Our Services", ref:"#services" },
-  { label: "Accessories",ref:"#accessories" },
-  { label: "Contact Us", ref:"#contact" },
+  { label: "Home", ref: "#home" },
+  { label: "Products", ref: "#products" },
+  { label: "Our Services", ref: "#services" },
+  { label: "Accessories", ref: "#accessories" },
+  { label: "Contact Us", ref: "#contact" },
 ];
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [cartOpen, setCartOpen] = useState(false);
+  const handleCart = () => {
+    setCartOpen(!cartOpen);
+  };
   const handleMenu = () => {
     setMenuOpen(!menuOpen);
   };
@@ -23,9 +26,6 @@ const Navbar = () => {
   const [searchOpen, setSearchOpen] = useState(false);
   const handleSearch = () => {
     setSearchOpen(!searchOpen);
-  };
-  const handleCart = () => {
-    setCartOpen(!cartOpen);
   };
 
   return (
@@ -42,7 +42,8 @@ const Navbar = () => {
       <div className="md:min-md:flex gap-2 items-center  justify-center hidden ">
         <ul className="flex gap-2">
           {NavItems.map((items) => (
-            <a href={items.ref}
+            <a
+              href={items.ref}
               className="bg-amber-400  hover:bg-yellow-400 p-1 rounded-md text-white cursor-pointer"
               key={items.id}
             >
@@ -98,7 +99,8 @@ const Navbar = () => {
           <div className="w-70 flex border-r z-0 bg-blue-400 h-full top-0 absolute left-0 ">
             <ul className="absolute w-full items-center text-lg font-semibold  top-[8.5%] ">
               {NavItems.map((items) => (
-                <a href={items.ref}
+                <a
+                  href={items.ref}
                   className=" p-2 hover:bg-yellow-400 rounded-full hover:text-white cursor-pointer w-full justify-center flex "
                   key={items.id}
                 >
@@ -109,9 +111,16 @@ const Navbar = () => {
           </div>
         )}
       </div>
-      {cartOpen ? <div className="z-50 absolute right-2 top-2 text-2xl hover:text-blue-400 cursor-pointer" onClick={handleCart}>
-        <BiX />
-      </div> : ""}
+      {cartOpen ? (
+        <div
+          className="z-50 absolute right-2 top-2 text-2xl hover:text-blue-400 cursor-pointer"
+          onClick={handleCart}
+        >
+          <BiX />
+        </div>
+      ) : (
+        ""
+      )}
     </div>
   );
 };
