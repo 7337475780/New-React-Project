@@ -16,13 +16,13 @@ const Testimonials = () => {
             </div>
           </div>
         </div>
-        <div className="border border-white  row-span-4 backdrop-blur-3xl bg-[rgba(0,0,0,0.1)]   rounded-xl h-full    flex items-center justify-center before:from-blue-200  before:via-indigo-400 before:to-sky-400 before:blur-3xl before:bg-conic-90 before:animate-shift before:absolute relative overflow-hidden z-10 before:z-0 before:block  before:w-full before before:h-full">
+        <div className="border border-white  row-span-4 backdrop-blur-3xl bg-[rgba(0,0,0,0.1)]   rounded-xl h-full    flex items-center justify-center before:from-[#0061ff]  before:to-[#60efff] before:blur-3xl before:bg-conic-90 before:animate-shift before:absolute relative overflow-hidden z-10 before:z-0 before:block  before:w-full before before:h-full">
           <div className="w-full h-full flex flex-col items-center bg-gradient-to-b from-purple-400 via-violet-200 text-[80px]   to-orange-300 bg-clip-text justify-center text-transparent ">
             <span>T</span>
             <span>V</span>
           </div>
         </div>
-        <div className="  col-span-2 row-span-2 w-full rounded-xl border backdrop-blur-2xl  bg-[rgba(0,0,0,0.1)]   h-full before:from-orange-200  before:via-purple-400 before:to-fuchsia-400 before:blur-3xl before:bg-conic-90 before:animate-shift before:absolute relative overflow-hidden z-10 before:z-0 before:block  before:w-full before before:h-full">
+        <div className="  col-span-2 row-span-2 w-full rounded-xl border backdrop-blur-2xl  bg-[rgba(0,0,0,0.1)]   h-full before:from-[#f3f520]  before:to-[#59d102] before:blur-3xl before:bg-conic-90 before:animate-shift before:absolute relative overflow-hidden z-10 before:z-0 before:block  before:w-full before before:h-full">
           <div className="w-full h-full flex items-center bg-gradient-to-tl from-amber-400 via-pink-600 to-gray-200 bg-clip-text text-[80px] text-transparent justify-center ">
             Choose
           </div>

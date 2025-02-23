@@ -24,7 +24,7 @@ const Hero = () => {
     >
       {/* text*/}
       <div>
-        <div className="flex justify-center text-wrap font-medium  mt-6  text-4xl">
+        <div ref={cartRef} className="flex justify-center text-wrap font-medium  mt-6  text-4xl">
           <h1>
             Buy your favourite{" "}
             <span className="bg-gradient-to-tr font-medium from-amber-200 via-yellow-400 to-orange-400 bg-clip-text text-transparent">
@@ -75,7 +75,7 @@ const Hero = () => {
         </span>
         <BiCart />
       </div>
-      <div ref={cartRef} className="text-black">{cartOpen && <Cart cart={cart} />}</div>
+      <div  className="text-black">{cartOpen && <Cart cart={cart} />}</div>
       {cartOpen ? (
         <div
           className="z-50 absolute right-2 top-2 text-2xl  cursor-pointer"
