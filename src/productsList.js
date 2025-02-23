@@ -510,5 +510,48 @@ const tvs3 = [
     image: "https://i.ebayimg.com/images/g/FswAAOSweSdmWM5f/s-l1600.webp",
   },
 ];
+const remotes =[{
+  id:61,
+  brand:"Oneplus",
+  price:3000,
+  description:"for U1S/Y1S",
+  image:"https://image01.oneplus.net/ebp/202203/07/1-m00-36-97-rb8bwmilaxmacfvnaamhbvlmwq8939.png"
+},
+{
+  id:62,
+  brand:"Samsung One Remote",
+  price:2500,
+  description:"For all samsung TVs",
+  image:"https://images.samsung.com/is/image/samsung/assets/test/vd/2023-smart-tv-test/solarcell-remote/2023-smart-tv-one-remote-f01-kv-mo.jpg?$720_N_JPG$"
+},
+{
+  id:63,
+  brand:"Oneplus",
+  price:3000,
+  description:"for U1S/Y1S",
+  image:"https://image01.oneplus.net/ebp/202203/07/1-m00-36-97-rb8bwmilaxmacfvnaamhbvlmwq8939.png"
+},
+{
+  id:64,
+  brand:"Oneplus",
+  price:3000,
+  description:"for U1S/Y1S",
+  image:"https://image01.oneplus.net/ebp/202203/07/1-m00-36-97-rb8bwmilaxmacfvnaamhbvlmwq8939.png"
+},
+{
+  id:65,
+  brand:"Oneplus",
+  price:3000,
+  description:"for U1S/Y1S",
+  image:"https://image01.oneplus.net/ebp/202203/07/1-m00-36-97-rb8bwmilaxmacfvnaamhbvlmwq8939.png"
+},
+{
+  id:66,
+  brand:"Oneplus",
+  price:3000,
+  description:"for U1S/Y1S",
+  image:"https://image01.oneplus.net/ebp/202203/07/1-m00-36-97-rb8bwmilaxmacfvnaamhbvlmwq8939.png"
+},
+];
 
-export  { tvs, tvs2, tvs3 };
+export  { tvs, tvs2, tvs3, remotes };
